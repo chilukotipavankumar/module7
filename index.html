@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Welcome to module 7 Online Discussion</h1>
+
+    <h1>Login</h1>
+    <form id="cookieForm" action="/set-cookies" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <h1>To-Do List</h1>
+    <ul id="taskList">
+        <li class="task">Buy iPhone</li>
+        <li class="task">Do laundry</li>
+        <li class="task">Walk the dog</li>
+        <li class="task">Read a book</li>
+        <li class="task">Go to Gym</li>
+        <li class="task">Make college fee payment</li>
+    </ul>
+
+    <h1>HTML Status Codes</h1>
+    <ul>
+        <li>
+            <strong>Name:</strong> Bandwidth Limit Exceeded<br>
+            <strong>Code:</strong> 509<br>
+            <strong>Purpose:</strong> This status code is used by many servers to indicate that the bandwidth limit imposed by the server administrator has been exceeded.<br>
+            <strong>Situation:</strong> If a website exceeds its allocated bandwidth, it might return a 509 status code to visitors until the limit is reset or increased.
+        </li>
+        <li>
+            <strong>Name:</strong> No Response<br>
+            <strong>Code:</strong> 444<br>
+            <strong>Purpose:</strong> This status code is used by the Nginx web server to indicate that the server has closed the connection without sending any response to the client.<br>
+            <strong>Situation:</strong> Nginx might return a 444 status code to drop a malicious request without sending any response, often used in firewall configurations.
+        </li>
+        <li>
+            <strong>Name:</strong> SSL Certificate Error<br>
+            <strong>Code:</strong> 495<br>
+            <strong>Purpose:</strong> This status code is used by Nginx to indicate that an SSL certificate error has occurred.<br>
+            <strong>Situation:</strong> If a client attempts to connect to a server using HTTPS with an invalid or untrusted SSL certificate, the server might return a 495 status code.
+        </li>
+        <li>
+            <strong>Name:</strong> SSL Certificate Required<br>
+            <strong>Code:</strong> 496<br>
+            <strong>Purpose:</strong> This status code is used by Nginx to indicate that a client certificate is required to establish an SSL connection.<br>
+            <strong>Situation:</strong> When a server requires a valid client certificate for authentication and the client does not provide one, the server might return a 496 status code.
+        </li>
+        <li>
+            <strong>Name:</strong> Network Read Timeout Error<br>
+            <strong>Code:</strong> 598<br>
+            <strong>Purpose:</strong> This status code is used by some proxy servers to indicate that a network read timeout has occurred.<br>
+            <strong>Situation:</strong> If a proxy server times out while reading from an upstream server, it might return a 598 status code to the client to indicate the timeout.
+        </li>
+    </ul>
+
+    <script src="script.js"></script>
+    <script>
+        // Adding DOMContentLoaded event listener
+        document.addEventListener('DOMContentLoaded', function() {
+            // Code from script.js can be placed here if necessary
+        });
+    </script>
+</body>
+</html>
