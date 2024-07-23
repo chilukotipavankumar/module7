@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Creating a JSON object representing a collection of movie data
     const movieData = {
-        title: 'RRR',
-        director: 'Rajamouli Sir',
+        title: 'Avengers',
+        director: 'Marvel Studios ',
         year: 2022,
-        genre: 'Drama',
-        actors: [' NTR', 'Ram Charan']
+        genre: 'Action',
+        actors: [' Tony Stark', 'Steve Rogers']
     };
 
     // Using JSON.stringify to convert the JSON object to a string
